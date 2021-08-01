@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap" rel="stylesheet">
+
+
+    <title>Document</title>
+    <style>
+        body{
+            padding: 0;
+            margin: 0;
+        }
+        .section1{
+            display: flex;
+            text-align: center;
+            width: 100%;
+            height: 700px;
+            background-image: linear-gradient(to right,rgba(93, 65, 156, 0.808),rgb(128, 13, 223));
+        
+        }
+      h3{
+          flex: 50%;
+          margin-top:250px;
+          font-family: 'Dancing Script', cursive;
+          color: blanchedalmond;
+          font-size: 70px;
+      }
+      .img{
+          border-radius: 50%;
+          width: 200px;
+          height: 200px;
+          margin-top: 230px;
+          margin-left: 200px;
+          
+      }
+      .nav{
+          width: 100%;
+          height: 50px;
+          background-color:black  ;
+          color: white;
+          font-family: 'Coda Caption', sans-serif;
+          font-size: 25px;    
+          display: flex;  }
+    .href1{
+        float: left;
+        display: flex;
+        margin-left: 900px;
+        font-size: 20px;
+        margin-top: -10px;
+    }
+    .section2{
+        width: 100%;
+        height: 500px;
+        background-color: rgb(255, 255, 255);
+    }
+    .transition{
+        width: 100%;
+        height: 40px;
+        background-image: linear-gradient(to bottom,rgba(93, 65, 156, 0.808), rgb(239, 222, 241));
+    }
+    .heading {
+    position: fixed;
+    top: 0;
+    right: 50;
+    margin: 2vmin 3vmin;
+    color: #faf4f4;
+    font-family: "Dancing Script", cursive;
+  }
+  
+  *,
+  *:before *:after {
+    box-sizing: inherit;
+  }
+  
+  html, body {
+    height: 100%;
+    font-family: "Dancing Script", cursive;
+    color: darkmagenta;
+  }
+  
+  .card-container {
+    background-color: #F1F1F1;
+    background-image: url(https://s01.sgp1.digitaloceanspaces.com/large/823966-47368-urlvfeoyyt-1481714150.jpeg);
+    width: 100%;
+    background-repeat:no-repeat ;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #F1F1F1;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(17, 17, 17, 0.35);
+    transition: transform 0.35s ease-out;
+    transform: translate(var(--x), var(--y)) scale(0.35) rotate(var(--angle));
+    will-change: transform;
+  }
+  .card:hover {
+    transform: scale(1) rotate(0deg);
+    z-index: 1;
+  }
+  .card:hover:before {
+    opacity: 1;
+  }
+  
+  .card:before {
+    content: "";
+    display: block;
+    width: 90%;
+    height: 80%;
+    margin: 5%;
+    background: var(--image) center center no-repeat;
+    background-size: cover;
+    box-shadow: inset 0 0 5px rgba(34, 34, 34, 0.35);
+    border-radius: 2px;
+    filter: sepia(0.2) brightness(0.9) contrast(1.2);
+    transition: opacity 0.35s ease-out;
+    opacity: 0.5;
+    will-change: opacity;
+  }
+  
+  .card-container {
+    position: relative;
+    width: 65vmin;
+    height: 80vmin;
+    width: 100%;
+  }
+  
+  .card:after {
+    display: block;
+    content: var(--caption);
+    font-weight: 800;
+    color: #555;
+    font-size: 3vmin;
+    opacity: 1;
+    text-align: center;
+  }
+  
+  .h2 {
+    position: absolute;
+    margin-bottom: 45px;
+  }
+  
+  .card{
+    width: 450px;
+    font-weight: 1000px;
+  
+  }
+  .memo{
+      color: white;
+      font-family: 'Dancing Script', cursive;
+      
+  }
+  .bgbg{
+   
+    width: 100%;
+    background-image:url(https://img.jakpost.net/c/2019/08/16/2019_08_16_78128_1565941784._large.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+     
+  }
+  .memo:hover{
+      font-size: 50px;
+  }
+  .video{
+      margin-top: 70px;
+  }
+    </style>
+</head>
+<body>
+    <div class="nav">To Ishani ....
+        <div class="href1"><p><a href='#havefunn'>Memories</a></p></div> 
+        
+    </div>
+    <div class="section1">
+        <img class="img" src="fufu.jpg">
+        <h3>Happy Friendship Day Ishani!!</h3>
+    </div>
+    <div class="transition"></div>
+    <div class="section2">
+        <div class="bgbg"id="havefunn">
+        <h1 class="memo">Thankyou so much ishani!!</h1>
+        <div class="card-container">
+
+ 
+      
+            <div class="card" style="--image: url('ishani11.jpg'); --angle: -7deg; --x: 155%; --y: -15%; --caption: 
+            'A beautiful flower for a beautiful flower. Happy friendship day ishani  '"></div>
+           
+            <div class="card" style="--image: url('ishani9.jpg'); --angle: -15deg; --x: 55%; --y: 20%; --caption: 'happy freindship day ishani, to the hardest working person i know.'"></div>
+           
+           
+           <div class="card" style="--image: url('ishani12.jpg'); --angle: 4deg; --x:95%; --y: -25%; --caption: 'Happy friendship day to the best singer and dancer in the world'"></div>
+               
+                <div class="card" style="--image: url('ishani1.jpeg'); --angle: -5deg; --x: 200%; --y: -25%; --caption: 'Happy friendship day to the smartest person in the world!!'"></div>
+               
+                <div class="card" style="--image: url('ishani2.jpg'); --angle: 18deg; --x: 210%; --y: 15%; --caption: 'Some people don’t believe in heroes, but they haven’t met you. Happy friendship day, Ishani!!'"></div>
+            
+               <div class="card" style="--image: url('ishani3.jpg'); --angle: -5deg; --x: 230%; --y: -5%; --caption: 'Happy friendship day, to the person who motivates me and inspires me'"></div>
+               
+               <div class="card" style="--image: url('ishani4.jpg');--angle: 12deg; --x: 140%; --y: 9%; --caption: 'Happy friendship day to the most kindest and modest person in the world!!'"></div>
+               
+               <div class="card" style="--image: url('ishani5.jpg'); --angle: -15deg; --x: 180%; --y: -5%; --caption: 'Thankyou for always being there for me, i can not ask for a better friend!'"></div>
+           
+               <div class="card" style="--image: url('ishani6.jpg'); --angle: -5deg; --x: 45%; --y: -20%; --caption:'Thankyou for always encouraging and being by my side no matter what'"></div>
+           
+               <div class="card" style="--image: url('ishani.7.jpg'); --angle: -2deg; --x: 20%; --y: -5%; --caption: 'Thankyou for always being there for me and helping me evryday!!'"></div>
+           
+               <div class="card" style="--image: url('ishani8.jpg'); --angle: -3deg; --x: 73%; --y: -1%; --caption:'Happy friendship day to the most special person to me !!'"></div>
+           
+               <div class="card" style="--image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7hRha0BoU5FwzswF3Dudc4AKMIldT8oQRog&usqp=CAU'); --angle: 5deg; --x: 115%; --y: -5%; --z:-1; --caption:'you make me want to dance!!!'"></div>
+           </div>
+           </div>
+           
+    </div>
+  
+</body>
+</html>
